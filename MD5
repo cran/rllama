@@ -1,0 +1,9 @@
+fef0bdc684314c3db6dddaa692fdaca4 *DESCRIPTION
+f82396e61a41460d8b6111e840dde9c3 *LICENSE
+3a1a9dcd43a503a6dab1231f22fb94e3 *NAMESPACE
+a28f1361c0c4f570adb09e1131f0cc7b *NEWS.md
+22deb57f801b2234dda22bb604df0eb8 *R/get_defillama_chain_tvl.R
+aa0a360a4f262e7ef77c7693291047f4 *R/get_defillama_protocol_tvl.R
+c2046ba7d76629c33a249ab48f630779 *README.md
+82a110c308f36357501f9be645267b76 *man/get_defillama_chain_tvl.Rd
+2d89a9aa9d83603372a8552436274c49 *man/get_defillama_protocol_tvl.Rd
