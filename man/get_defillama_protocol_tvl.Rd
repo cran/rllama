@@ -4,15 +4,19 @@
 \alias{get_defillama_protocol_tvl}
 \title{Protocol TVL Data}
 \usage{
-get_defillama_protocol_tvl()
+get_defillama_protocol_tvl(is_cex_include = F)
+}
+\arguments{
+\item{is_cex_include}{Logical; if FALSE (default), data for CEX
+will be excluded from the results. Set to TRUE to include CEX data.}
 }
 \value{
-A data.table containing TVL data with columns: symbol, tvl, slug, name, chain, and category.
+A `data.table` containing TVL data with columns: symbol, tvl, slug, name, chain, and category.
 The data is sorted by TVL in descending order.
 }
 \description{
 This function retrieves Total Value Locked (TVL) data for various protocols
-from a specified API and formats it into a data.table for analysis.
+from a specified API and formats it into a table for analysis.
 }
 \examples{
 protocol_tvl = get_defillama_protocol_tvl()

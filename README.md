@@ -5,6 +5,10 @@ DeFiLlama API. This package simplifies the process of fetching and
 manipulating DeFiLlama data, making it easier for users to perform
 analyses and create visualizations.
 
+[![](https://www.r-pkg.org/badges/version/rllama)](https://cran.r-project.org/package=rllama)
+[![](https://cranlogs.r-pkg.org/badges/rllama)](https://cran.r-project.org/package=rllama)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/rllama)](https://cran.r-project.org/package=rllama)
+
 ## Installation
 
 You can install the development version of `rllama` from GitHub with:
@@ -12,24 +16,24 @@ You can install the development version of `rllama` from GitHub with:
     # install.packages("devtools")
     devtools::install_github("AlexTwoR/rllama")
 
-    ## Skipping install of 'rllama' from a github remote, the SHA1 (f591a4e1) has not changed since last install.
+    ## Skipping install of 'rllama' from a github remote, the SHA1 (b231ef9f) has not changed since last install.
     ##   Use `force = TRUE` to force installation
 
 Usage
 
 Here is a basic example of how to use rllama to retrieve TVL data:
 
-    library(rllama)
+    library( rllama )
 
     # Example usage
     # This will fetch and display TVL data
-    protocol_tvl = get_defillama_protocol_tvl()
-    head( protocol_tvl )
+    chain_tvl = get_defillama_chain_tvl()
+    head( chain_tvl )
 
-    ##                        name symbol                     slug         tvl       chain       category
-    ## 1:              Binance CEX      -              binance-cex 70729509563 Multi-Chain            CEX
-    ## 2:                     Lido    LDO                     lido 18505458843 Multi-Chain Liquid Staking
-    ## 3:                 Bitfinex      -                 bitfinex 12220230657 Multi-Chain            CEX
-    ## 4:                      OKX      -                      okx 12116460696 Multi-Chain            CEX
-    ## 5:                Robinhood      -                robinhood  7855055233 Multi-Chain            CEX
-    ## 6: Polygon Bridge & Staking  MATIC polygon-bridge-&-staking  6689650424     Polygon          Chain
+    ##        name symbol         tvl      gecko_id cmcId
+    ## 1: Ethereum    ETH 59430242034      ethereum  1027
+    ## 2:     Tron   TRON  7502492328          tron  1958
+    ## 3:  Binance    BNB  3673133628   binancecoin  1839
+    ## 4: Arbitrum    ARB  2502882968      arbitrum 11841
+    ## 5:   Solana    SOL  1520704963        solana  5426
+    ## 6:  Polygon  MATIC   956230584 matic-network  3890

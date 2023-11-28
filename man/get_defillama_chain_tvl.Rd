@@ -7,11 +7,11 @@
 get_defillama_chain_tvl()
 }
 \value{
-A data.table containing the TVL data with columns: name, symbol, tvl, gecko_id, cmcId, and chainId.
+A `data.table` containing the TVL data with columns: name, symbol, tvl, gecko_id, cmcId, and chainId.
 The data is sorted by TVL in descending order.
 }
 \description{
-This function retrieves Total Value Locked (TVL) data for various chains
+This function retrieves TVL data for various chains
 from a specified API and formats it into a data.table for analysis.
 }
 \examples{
